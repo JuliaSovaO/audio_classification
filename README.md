@@ -135,4 +135,4 @@ The 60.93% accuracy (vs. 91% SVM benchmark) is due to class imbalance in the dat
 
 - [Yuliia](https://youtu.be/EHGFcpIewvc?feature=shared)
 - [Oksana](https://youtu.be/Tn6ZER4yozE?feature=shared)
-- [Yelizaveta]()
+- [Yelizaveta](https://youtu.be/hWKRWPKy5N4?si=tC5132e1yr7Dxpcb)
