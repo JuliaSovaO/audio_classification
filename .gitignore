@@ -1,1 +1,7 @@
-Audio_Classification_Piletska_Dziuba_Sova.pdf
+__pycache__/
+data/
+speech_commands_v0.02.tar.gz.0
+X_test.npy
+y_test.npy
+X_train.npy
+y_train.npy
