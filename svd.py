@@ -56,6 +56,7 @@ class ManualSVD:
 
         end_time = time.time()
         print(f"Manual SVD completed in {end_time - start_time:.2f} seconds.")
+        np.save('singular_values.npy', self.singular_values)
         
         return self
 

@@ -39,6 +39,7 @@ def main():
     svd = ManualSVD(k=25)
     svd.fit(X_train_norm)
     X_train_reduced = svd.transform(X_train_norm)
+    np.save('X_train_reduced.npy', X_train_reduced)
 
     del X_train_norm
     gc.collect()
@@ -69,11 +70,15 @@ def main():
         gc.collect()
         
         X_test_reduced = svd.transform(X_test_norm)
+
+        np.save('X_test_reduced.npy', X_test_reduced)
         
         del X_test_norm
         gc.collect()
         
         y_pred = knn.predict(X_test_reduced, batch_size=500)
+
+        np.save('y_pred.npy', y_pred)
         
         print("\n--- Final Evaluation Metrics ---")
         results = calculate_metrics(y_test, y_pred)
